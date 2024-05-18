@@ -28,7 +28,7 @@ sudo vi /etc/systemd/system/nexus.service
 
 Copy the below content.
 
-[Unit]
+```[Unit]
 
 Description=nexus service
 
@@ -63,7 +63,7 @@ sudo systemctl enable nexus
 sudo systemctl start nexus
 
 sudo systemctl status nexus
-
+```
 if it says stopped, review the steps above and you can troubleshoot by looking into Nexus logs by executing below command:
 tail -f /opt/sonatype-work/nexus3/log/nexus.log
 
